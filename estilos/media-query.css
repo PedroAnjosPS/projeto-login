@@ -15,7 +15,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
-    body {
+    body { /* CONFIGURAÇÃO PARA TABLET */
         background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     }
 
@@ -37,11 +37,12 @@
 
     div#formulario > p {
         font-size: 1em;
+        margin: 30px 0px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    body {
+    body { /* CONFIGURAÇÃO PARA GRANDES TELAS */
         background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     }
 
@@ -66,6 +67,7 @@
     }
 
     div#formulario > p {
+        margin: 30px 0px;
         font-size: 1.2em;
     }
 }
