@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -19,7 +20,21 @@
                     Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                 </p>
                 <form action="dadosreceived.php" method="post">
-                    
+                    <div class="campo">
+                        <i class="material-symbols-outlined">person</i>
+                        <input type="email" name="email" id="idemail" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="idemail">E-mail</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-symbols-outlined">vpn_key</i>
+                        <input type="password" name="senha" id="idsenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="idsenha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha <i class="material-symbols-outlined">mail</i>
+                    </a>
                 </form>
             </div>
         </section>
